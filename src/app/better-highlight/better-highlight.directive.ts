@@ -13,7 +13,7 @@ import {
 })
 export class BetterHighlightDirective implements OnInit {
   @Input() defaultColor: string = "transparent";
-  @Input() highlightColor: string = "blue";
+  @Input("appBetterHighlight") highlightColor: string = "blue";
 
   /**
    * On the element this reference sits access the style property and subproperty
